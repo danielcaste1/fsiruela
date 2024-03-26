@@ -1,4 +1,6 @@
 ---
+import Footer from "../components/Footer.astro";
+
 interface Props {
   title: string;
 }
@@ -22,8 +24,9 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-white">
+  <body class="bg-[#FFFFFF]">
     <slot />
+    <Footer />
   </body>
 </html>
 <style is:global>
