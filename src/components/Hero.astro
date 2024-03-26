@@ -1,0 +1,70 @@
+---
+import Logo from "./shared/Logo.astro";
+---
+
+<section class="flex items-center w-full h-screen p-12">
+  <div
+    id="siruela-hero"
+    class="mx-auto max-w-[1352px] w-full max-h-[745px] h-full rounded-2xl flex flex-col items-center justify-center"
+  >
+    <Logo />
+    <div class="mt-16 w-1/2 flex flex-col items-center gap-10 text-white">
+      <h1 class="font-inter font-bold text-7xl text-center">
+        Impacto. Cambio. Oportunidades
+      </h1>
+      <p class="font-open-sans text-lg text-center w-10/12 max-w-[550px]">
+        Siruela es el lugar en dónde proyectos sostenibles de alto impacto
+        social, ambiental y educativo siembran su camino.
+      </p>
+    </div>
+    <img
+      class="bottom-52 absolute z-0 min-w-[1280px] w-full"
+      src="./hero-doodle.svg"
+      alt=""
+      srcset=""
+    />
+    <div
+      class="font-open-sans bg-white bg-opacity-20 rounded-3xl overflow-hidden z-10 mt-10 mb-28"
+    >
+      <input
+        class="text-white placeholder-white bg-transparent py-3 px-5 outline-none"
+        placeholder="Deja tu email"
+        type="text"
+      />
+      <button
+        class="text-white bg-[#1B193F] rounded-3xl px-6 py-3"
+        type="submit">Contacto</button
+      >
+    </div>
+    <ul class="flex gap-4">
+      <li class="rounded-full p-3 bg-white shadow-md">
+        <a href="#">
+          <img src="./facebook.svg" alt="" />
+        </a>
+      </li>
+      <li class="rounded-full p-3 bg-white shadow-md">
+        <a href="#">
+          <img src="./instagram.svg" alt="" />
+        </a>
+      </li>
+      <li class="rounded-full p-3 bg-white shadow-md">
+        <a href="#">
+          <img src="./twitter.svg" alt="" />
+        </a>
+      </li>
+      <li class="rounded-full p-3 bg-white shadow-md">
+        <a href="#">
+          <img src="./linkedin.svg" alt="" />
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <style>
+    #siruela-hero {
+      background-image: linear-gradient(#0a60ffcc, #0a60ffcc), url("hero.jpeg");
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+</section>
